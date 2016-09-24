@@ -6,7 +6,7 @@ test('strip trailing separator:', t => {
 	t.is(removeTrailingSeparator('foo\\'), 'foo');
 });
 
-test('don\'t strip when it\'s the only char in the string', async t => {
+test('don\'t strip when it\'s the only char in the string', t => {
 	t.is(removeTrailingSeparator('/'), '/');
 	t.is(removeTrailingSeparator('\\'), '\\');
 });
