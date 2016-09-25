@@ -24,13 +24,21 @@ removeTrailingSeparator('///')  // '/'
 
 // returns empty string
 removeTrailingSeparator('') // ''
+```
 
-// same as above for win32 separators
-removeTrailingSeparator('\\foo\\bar\\')     // '\\foo\\bar'
-removeTrailingSeparator('\\foo\\bar\\\\\\') // '\\foo\\bar'
-removeTrailingSeparator('\\')               // '\\'
-removeTrailingSeparator('\\\\\\')           // '\\'
-removeTrailingSeparator('')                 // ''
+## Backslash, or win32 separator
+
+`\` is considered a separator only on WIN32 systems. All UNIX compliant systems
+see backslash as a valid file name character, so it would break UNIX compliance
+to remove it there.
+
+In practice, this means that this code will return different things depending on
+what system it runs on:
+
+```
+removeTrailingSeparator('\\foo\\')
+// UNIX  => '\\foo\\'
+// WIN32 => '\\foo'
 ```
 
 [npm-url]: https://npmjs.org/package/remove-trailing-separator
