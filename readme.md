@@ -1,6 +1,6 @@
 # remove-trailing-separator
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-img]][npm-url] [![Build Status: Linux][travis-img]][travis-url] [![Build Status: Windows][appveyor-img]][appveyor-url] [![Coverage Status][coveralls-img]][coveralls-url]
 
 Removes all separators from the end of a string.
 
@@ -42,8 +42,10 @@ removeTrailingSeparator('\\foo\\')
 ```
 
 [npm-url]: https://npmjs.org/package/remove-trailing-separator
-[npm-image]: https://badge.fury.io/js/remove-trailing-separator.svg
+[npm-img]: https://badge.fury.io/js/remove-trailing-separator.svg
 [travis-url]: https://travis-ci.org/darsain/remove-trailing-separator
-[travis-image]: https://travis-ci.org/darsain/remove-trailing-separator.svg?branch=master
+[travis-img]: https://travis-ci.org/darsain/remove-trailing-separator.svg?branch=master
+[appveyor-url]: https://ci.appveyor.com/project/darsain/remove-trailing-separator/branch/master
+[appveyor-img]: https://ci.appveyor.com/api/projects/status/wvg9a93rrq95n2xl/branch/master?svg=true
 [coveralls-url]: https://coveralls.io/github/darsain/remove-trailing-separator?branch=master
-[coveralls-image]: https://coveralls.io/repos/github/darsain/remove-trailing-separator/badge.svg?branch=master
+[coveralls-img]: https://coveralls.io/repos/github/darsain/remove-trailing-separator/badge.svg?branch=master
